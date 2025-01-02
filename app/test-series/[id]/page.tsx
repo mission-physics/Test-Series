@@ -1,10 +1,16 @@
-import { Star } from "lucide-react";
+"use client";
 
-export function TestSeriesHeader() {
+import { TestSeriesArr } from "@/app/lib/testSeries";
+import { TestSeriesType } from "@/app/lib/types";
+import { Star } from "lucide-react";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
+
+export function TestSeriesHeader( testSeries : TestSeriesType) {
   return (
     <div className="bg-white p-6 rounded-lg shadow-sm">
       <h1 className="text-3xl font-bold text-[#263238] mb-2">
-        IIT JAM Physics Test Series 2024
+        {testSeries.title}
       </h1>
       <div className="flex items-center gap-4 text-sm text-gray-600 mb-4">
         <span>Duration: 6 months</span>
@@ -67,12 +73,20 @@ export function TestSeriesDescription() {
 }
 
 
-export function TestSeriesPurchaseCard() {
+export function TestSeriesPurchaseCard(testSeries: TestSeriesType ) {
     return (
       <div className="bg-white p-6 rounded-lg shadow-sm">
+        <Image src={testSeries.coverImage} alt={testSeries.title} width={500} height={500} className="rounded-md mb-4" />
         <div className="mb-6">
-          <h2 className="text-3xl font-bold text-[#263238] mb-2">₹2,999</h2>
-          <p className="text-sm text-gray-500">One-time payment, lifetime access</p>
+          <div className="flex items-baseline justify-start gap-2">
+            <h2 className="text-3xl font-bold text-[#263238] mb-2">₹{testSeries.discountedPrice}</h2>
+            <p className="text-sm font-bold mb-2 line-through text-gray-400">₹{testSeries.price}</p>
+            <p className="text-[#82d399] font-semibold text-lg">{testSeries.discount}% off</p>
+          </div>
+          <span className="text-xs bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-2 py-1 rounded-sm">
+            Early Bird Offer
+          </span>
+          <p className="text-sm text-gray-500 mt-2">One-time payment, lifetime access</p>
         </div>
   
         <button className="w-full bg-[#92E3A9] text-[#263238] py-3 px-6 rounded-full font-semibold hover:bg-[#82d399] transition-colors mb-4">
@@ -96,6 +110,12 @@ export function TestSeriesPurchaseCard() {
 
 
 export default function TestSeriesDetails() {
+  const pathname = usePathname();
+
+  // Get the taskid from the URL
+  const testSeriesId = pathname.split("/")[2];
+  const requrestedTestSeries = TestSeriesArr.filter((testSeries) => testSeries.id.toString() === testSeriesId)[0];
+
   return (
     <div className="min-h-screen bg-gray-50  pt-16">
       {/* Main Content */}
@@ -103,13 +123,13 @@ export default function TestSeriesDetails() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Left Content */}
           <div className="lg:col-span-2 space-y-8">
-            <TestSeriesHeader />
+            <TestSeriesHeader {...requrestedTestSeries} />
             <TestSeriesDescription />
           </div>
 
           {/* Right Sidebar */}
           <div className="lg:col-span-1">
-            <TestSeriesPurchaseCard />
+            <TestSeriesPurchaseCard {...requrestedTestSeries} />
           </div>
         </div>
       </div>

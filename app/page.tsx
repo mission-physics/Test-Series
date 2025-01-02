@@ -77,15 +77,23 @@ export function TestSeries() {
         <h2 className="text-3xl font-bold text-center text-[#263238] mb-12">Available Test Series</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {TestSeriesArr.map((item) => (
-            <div key={item.title} className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+            <div key={item.id} className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+              <Image src={item.coverImage} alt={item.title} width={500} height={500} className="rounded-md mb-4" />
               <h3 className="text-xl font-semibold text-[#263238] mb-2">{item.title}</h3>
               <p className="text-gray-600 mb-4">{item.date}</p>
               <div className="flex items-center justify-between">
-                <span className="text-2xl font-bold text-[#92E3A9]">{item.price}</span>
-                <Link href={"/test-series"} className="flex items-center gap-2 text-[#263238] font-semibold hover:text-[#92E3A9] transition-colors">
-                  Enroll Now <ArrowRight className="w-4 h-4" />
-                </Link>
+                <div className="flex items-baseline justify-start gap-2">
+                  <h2 className="text-2xl font-bold text-[#92E3A9] mb-2">₹{item.discountedPrice}</h2>
+                  <p className="text-sm font-bold mb-2 line-through text-gray-400">₹{item.price}</p>
+                  <p className="text-[#82d399] font-semibold text-lg">{item.discount}% off</p>
+                </div>
+                <span className="text-xs bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-2 py-1 rounded-sm">
+                  Early Bird Offer
+                </span>
               </div>
+              <Link href={`/test-series/${item.id}`} className="flex items-center justify-center gap-2 hover:gap-3 text-white rounded-md font-semibold bg-[#92E3A9] hover:bg-[#6ff595] px-2 py-2 hover:text-gray-100 mt-2 transition-colors">
+                Enroll Now <ArrowRight className="w-4 h-4" />
+              </Link>
             </div>
           ))}
         </div>
