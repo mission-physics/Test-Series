@@ -8,8 +8,8 @@ import Link from "next/link";
 export function Hero() {
   return (
     <section className="relative bg-gradient-to-b from-[#92E3A9]/10 to-white pt-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-row items-center min-h-[calc(100vh-4rem)] gap-12">
+      <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
+        <div className="flex flex-col-re md:flex-row items-center min-h-[50svh] md:min-h-[calc(100vh-4rem)] gap-12">
           <div className="flex-1">
             <h1 className="text-4xl lg:text-6xl font-bold text-[#263238] mb-6">
               Master Physics for
@@ -22,7 +22,7 @@ export function Hero() {
               Explore Test Series
             </Link>
           </div>
-          <div className="flex-1">
+          <div className="flex-1 hidden md:block">
             <Image src="/images/hero.svg" alt="Physics Education" className="w-full max-w-[600px]" width={800} height={800} />
           </div>
         </div>
