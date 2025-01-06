@@ -1,4 +1,5 @@
 import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import Image from "next/image";
 
 
 type FooterSection = {
@@ -101,9 +102,12 @@ export function Footer() {
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           {/* Brand and Social */}
           <div className="space-y-8 xl:col-span-1">
-            <span className="text-2xl font-bold text-[#263238]">
-              Mission<span className="text-[#92E3A9]">Physics</span>
-            </span>
+            <div className="flex items-center">
+              <Image src={'/images/logo_mp.png'} alt="logo" height={60} width={60} />
+              <span className="text-2xl font-bold text-[#263238] ml-2">
+                Mission<span className="text-[#dea0ee]">Physics</span>
+              </span>
+            </div>
             <p className="text-gray-500 max-w-xs">
               Empowering students to excel in physics competitive examinations through comprehensive test series and expert guidance.
             </p>

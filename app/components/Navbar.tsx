@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 export function Navbar() {
   const router = useRouter();
@@ -14,16 +15,17 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center cursor-pointer" onClick={() => router.push("/")}>
-            <span className="text-2xl font-bold text-[#263238]">Mission<span className="text-[#92E3A9]">Physics</span></span>
+            <Image src={'/images/logo_mp.png'} alt="logo" height={60} width={60} />
+            <span className="text-2xl ml-2 font-bold text-[#263238]">Mission<span className="text-[#dea0ee]">Physics</span></span>
           </div>
           
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-[#263238] hover:text-[#92E3A9] transition-colors">Home</Link>
-            <Link href="#" className="text-[#263238] hover:text-[#92E3A9] transition-colors">About</Link>
-            <Link href="#test-series" className="text-[#263238] hover:text-[#92E3A9] transition-colors">Test Series</Link>
-            <Link href="#" className="text-[#263238] hover:text-[#92E3A9] transition-colors">Contact</Link>
-            <button className="bg-[#92E3A9] text-[#263238] px-4 py-2 rounded-full font-semibold hover:bg-[#82d399] transition-colors" onClick={() => router.push("#test-series")}>
+            <Link href="/" className="text-[#263238] hover:text-[#eaa5fb] transition-colors">Home</Link>
+            <Link href="#" className="text-[#263238] hover:text-[#eaa5fb] transition-colors">About</Link>
+            <Link href="#test-series" className="text-[#263238] hover:text-[#eaa5fb] transition-colors">Test Series</Link>
+            <Link href="#" className="text-[#263238] hover:text-[#eaa5fb] transition-colors">Contact</Link>
+            <button className="bg-[#dea0ee] text-gray-50 px-4 py-2 rounded-full font-semibold hover:bg-[#eaa5fb] transition-colors" onClick={() => router.push("#test-series")}>
               Get Started
             </button>
           </div>

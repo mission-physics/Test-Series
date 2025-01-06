@@ -13,17 +13,17 @@ export function Hero() {
           <div className="flex-1">
             <h1 className="text-4xl lg:text-6xl font-bold text-[#263238] mb-6">
               Master Physics for
-              <span className="text-[#92E3A9]"> Competitive Exams</span>
+              <span className="text-[#dea0ee]"> Competitive Exams</span>
             </h1>
             <p className="text-lg text-gray-600 mb-8">
               Comprehensive test series and expert guidance for IIT JAM, JEST, and other competitive physics examinations.
             </p>
-            <Link href={"#test-series"} className="bg-[#92E3A9] text-[#263238] px-8 py-3 rounded-full font-semibold hover:bg-[#82d399] transition-colors">
+            <Link href={"#test-series"} className="bg-[#dea0ee] text-gray-50 px-8 py-3 rounded-full font-semibold hover:bg-[#dea0ee] transition-colors">
               Explore Test Series
             </Link>
           </div>
           <div className="flex-1 hidden md:block">
-            <Image src="/images/hero.svg" alt="Physics Education" className="w-full max-w-[600px]" width={800} height={800} />
+            <Image src="/images/hero.png" alt="Physics Education" className="w-full max-w-[600px]" width={800} height={800} />
           </div>
         </div>
       </div>
@@ -38,17 +38,17 @@ export function Features() {
         <h2 className="text-3xl font-bold text-center text-[#263238] mb-12">Why Choose Mission Physics?</h2>
         <div className="grid md:grid-cols-3 gap-8">
           <FeatureCard
-            icon={<GraduationCap className="w-6 h-6 text-[#92E3A9]" />}
+            icon={<GraduationCap className="w-6 h-6 text-[#dea0ee]" />}
             title="Expert Faculty"
             description="Learn from experienced professors and researchers in physics."
           />
           <FeatureCard
-            icon={<BookOpen className="w-6 h-6 text-[#92E3A9]" />}
+            icon={<BookOpen className="w-6 h-6 text-[#dea0ee]" />}
             title="Comprehensive Coverage"
             description="Complete syllabus coverage with detailed solutions and explanations."
           />
           <FeatureCard
-            icon={<ClipboardCheck className="w-6 h-6 text-[#92E3A9]" />}
+            icon={<ClipboardCheck className="w-6 h-6 text-[#dea0ee]" />}
             title="Regular Test Series"
             description="Practice with exam-pattern questions and improve your problem-solving skills."
           />
@@ -61,7 +61,7 @@ export function Features() {
 function FeatureCard({ icon, title, description }: { icon: React.ReactNode; title: string; description: string }) {
   return (
     <div className="p-6 rounded-xl border border-gray-100 shadow-sm">
-      <div className="w-12 h-12 bg-[#92E3A9]/20 rounded-lg flex items-center justify-center mb-4">
+      <div className="w-12 h-12 bg-[#eaa5fb]/20 rounded-lg flex items-center justify-center mb-4">
         {icon}
       </div>
       <h3 className="text-xl font-semibold text-[#263238] mb-2">{title}</h3>
@@ -83,15 +83,15 @@ export function TestSeries() {
               <p className="text-gray-600 mb-4">{item.date}</p>
               <div className="flex items-center justify-between">
                 <div className="flex items-baseline justify-start gap-2">
-                  <h2 className="text-2xl font-bold text-[#92E3A9] mb-2">₹{item.discountedPrice}</h2>
+                  <h2 className="text-2xl font-bold text-[#eaa5fb] mb-2">₹{item.discountedPrice}</h2>
                   <p className="text-sm font-bold mb-2 line-through text-gray-400">₹{item.price}</p>
-                  <p className="text-[#82d399] font-semibold text-lg">{item.discount}% off</p>
+                  <p className="text-[#eaa5fb] font-semibold text-lg">{item.discount}% off</p>
                 </div>
-                <span className="text-xs bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-2 py-1 rounded-sm">
+                <span className="text-xs bg-gradient-to-r from-purple-300 to-purple-400 text-white px-2 py-1 rounded-sm">
                   Early Bird Offer
                 </span>
               </div>
-              <Link href={`/test-series/${item.id}`} className="flex items-center justify-center gap-2 hover:gap-3 text-white rounded-md font-semibold bg-[#92E3A9] hover:bg-[#6ff595] px-2 py-2 hover:text-gray-100 mt-2 transition-colors">
+              <Link href={`/test-series/${item.id}`} className="flex items-center justify-center gap-2 hover:gap-3 text-white rounded-md font-semibold bg-[#dea0ee] hover:bg-[#eaa5fb] px-2 py-2 hover:text-gray-100 mt-2 transition-colors">
                 Enroll Now <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
@@ -111,7 +111,7 @@ export function Contact() {
         <p className="text-lg text-gray-600 mb-8">
           Join Mission Physics today and take the first step towards your success.
         </p>
-        <button className="bg-[#92E3A9] text-[#263238] px-8 py-3 rounded-full font-semibold hover:bg-[#82d399] transition-colors">
+        <button className="bg-[#dea0ee] text-gray-50 px-8 py-3 rounded-full font-semibold hover:bg-[#eaa5fb] transition-colors">
           Contact Us
         </button>
       </div>

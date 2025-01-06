@@ -11,22 +11,30 @@ export type TestSeriesType = {
     reviews: ReviewType[],
     description: string,
     paperSetters: PaperSetterType[],
-    courseIncludes: string[],
+    features: string[],
     syllabus: string[],
+    schedule: ScheduleType[]
 }
 
-type ReviewType = {
+export type ReviewType = {
     id: number,
     name: string,
-    rating: number,
+    college: string,
+    course: string,
     review: string,
     date: string,
 }
 
-type PaperSetterType = {
+export type PaperSetterType = {
     id: number,
     name: string,
     designation: string,
     institutiom: string,
     description: string,
+}
+
+export type ScheduleType = {
+    testName: string,
+    startedOn: string,
+    endedOn: string,
 }
