@@ -23,7 +23,7 @@ export function FooterSocial() {
           <a
             key={index}
             href={link.href}
-            className="text-gray-400 hover:text-[#92E3A9] transition-colors"
+            className="text-gray-400 hover:text-[#dea0ee] transition-colors"
           >
             <Icon className="h-6 w-6" />
           </a>
@@ -44,7 +44,7 @@ export function FooterLinks({ sections }: { sections: FooterSection[] }) {
             <ul className="space-y-3">
               {section.links.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className="text-gray-500 hover:text-[#92E3A9] transition-colors">
+                  <a href={link.href} className="text-gray-500 hover:text-[#dea0ee] transition-colors">
                     {link.label}
                   </a>
                 </li>
@@ -123,7 +123,7 @@ export function Footer() {
         {/* Bottom */}
         <div className="mt-12 pt-8 border-t border-gray-200">
           <p className="text-gray-400 text-center">
-            © {new Date().getFullYear()} Swaparup Mukherjee. All rights reserved.
+            © {new Date().getFullYear()} The Technova Group. All rights reserved.
           </p>
         </div>
       </div>

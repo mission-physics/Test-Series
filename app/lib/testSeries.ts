@@ -82,35 +82,100 @@ export const TestSeriesArr: TestSeriesType[] = [
   {
     id: 2,
     coverImage: "/images/card-cover.jpg",
-    title: "JEST Physics",
-    date: "Starting from July 1st",
-    price: 2499,
-    discount: 20,
-    discountedPrice: 1999,
-    features: [],
-    description: "",
-    duration: "",
+    title: "IIT JAM 2025 (Physics)",
+    date: "Started on 20th November, 2025",
+    price: 750,
+    discount: 30,
+    discountedPrice: 525,
+    features: [
+      "Detailed solution in PDF format",
+      "All tests will be live till your IIT-JAM 2025 exam day",
+      "Paper setters are from all over the IITs.",
+      "Aspirants may interact with them in officail WhatsApp group",
+      "Access of MP_IIT-JAM_2025_Official Class in Google Classroom"
+    ],
+    description: "Ace IIT JAM 2025 (Physics) with 15 expertly crafted tests, in which 7 topic-wise tests and 8 full-length tests, covering the entire syllabus. Designed to mirror the real exam, this series boosts your confidence, sharpens your skills, and propels you toward your dream score!",
+    duration: "Live Now",
     paperSetters: [],
     reviews: [],
     syllabus: [],
-    totalTests: 0,
-    schedule: []
-  },
-  {
-    id: 3,
-    coverImage: "/images/card-cover.jpg",
-    title: "GATE Physics",
-    date: "Starting from August 1st",
-    price: 3499,
-    discount: 20,
-    discountedPrice: 2799,
-    features: [],
-    description: "",
-    duration: "",
-    paperSetters: [],
-    reviews: [],
-    syllabus: [],
-    totalTests: 0,
-    schedule: []
+    totalTests: 15,
+    schedule: [
+      {
+        testName: "Topic Wise Test_01 - Mathematical Physics_MMP",
+        startedOn: "20/11/2024",
+        endedOn: "02/02/2025"
+      },
+      {
+        testName: "Topic Wise Test_02 - Classical Mechanics_CM",
+        startedOn: "23/11/2024",
+        endedOn: "02/02/2025"
+      },
+      {
+        testName: "Topic Wise Test_03 - Solid State Physics_SSP & Electronics",
+        startedOn: "26/11/2024",
+        endedOn: "02/02/2025"
+      },
+      {
+        testName: "Topic Wise Test_04 - Modern Physics_MP",
+        startedOn: "29/11/2024",
+        endedOn: "02/02/2025"
+      },
+      {
+        testName: "Topic Wise Test_05 - Electricity & Magnetism",
+        startedOn: "02/12/2024",
+        endedOn: "02/02/2025"
+      },
+      {
+        testName: "Topic Wise Test_06 - Thermodynamics & Kinetic Theory of Gases_KTG",
+        startedOn: "05/12/2024",
+        endedOn: "02/02/2025"
+      },
+      {
+        testName: "Topic Wise Test_07 - Oscillations, Wave & Optics",
+        startedOn: "10/12/2024",
+        endedOn: "02/02/2025"
+      },
+      {
+        testName: "Full-length Test_01 - IIT-JAM_2025_PH_Full syllabus",
+        startedOn: "15/12/2024",
+        endedOn: "02/02/2025"
+      },
+      {
+        testName: "Full-length Test_02 - IIT-JAM_2025_PH_Full syllabus",
+        startedOn: "22/12/2024",
+        endedOn: "02/02/2025"
+      },
+      {
+        testName: "Full-length Test_03 - IIT-JAM_2025_PH_Full syllabus",
+        startedOn: "29/12/2024",
+        endedOn: "02/02/2025"
+      },
+      {
+        testName: "Full-length Test_04 - IIT-JAM_2025_PH_Full syllabus",
+        startedOn: "05/01/2025",
+        endedOn: "02/02/2025"
+      },
+      {
+        testName: "Full-length Test_05 - IIT-JAM_2025_PH_Full syllabus",
+        startedOn: "12/01/2025",
+        endedOn: "02/02/2025"
+      },
+      {
+        testName: "Full-length Test_06 - IIT-JAM_2025_PH_Full syllabus",
+        startedOn: "19/01/2025",
+        endedOn: "02/02/2025"
+      },
+      {
+        testName: "Full-length Test_07 - IIT-JAM_2025_PH_Full syllabus",
+        startedOn: "25/01/2025",
+        endedOn: "02/02/2025"
+      },
+      {
+        testName: "Full-length Test_08 - IIT-JAM_2025_PH_Full syllabus",
+        startedOn: "26/01/2025",
+        endedOn: "02/02/2025"
+      },
+    ]
   },
 ];

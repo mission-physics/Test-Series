@@ -71,6 +71,10 @@ export function TestSeriesDescription(testSeries: TestSeriesType) {
 
 
 export function TestSeriesPurchaseCard(testSeries: TestSeriesType ) {
+    const handleCourseEnroll = () => {
+      window.open(`https://wa.me/${8436582775}?text=${encodeURI(`Hi, I want to enroll for ${testSeries.title}`)}.`, '_blank');
+    }
+
     return (
       <div className="bg-white p-6 rounded-lg shadow-sm">
         <Image src={testSeries.coverImage} alt={testSeries.title} width={500} height={500} className="rounded-md mb-4" />
@@ -86,7 +90,7 @@ export function TestSeriesPurchaseCard(testSeries: TestSeriesType ) {
           <p className="text-sm text-gray-500 mt-2">One-time payment, access till the tests going on</p>
         </div>
   
-        <button className="w-full bg-[#dea0ee] text-gray-50 py-3 px-6 rounded-full font-semibold hover:bg-[#eaa5fb] transition-colors mb-4">
+        <button onClick={handleCourseEnroll} className="w-full bg-[#dea0ee] text-gray-50 py-3 px-6 rounded-full font-semibold hover:bg-[#eaa5fb] transition-colors mb-4">
           Enroll Now
         </button>
   
@@ -218,7 +222,15 @@ export default function TestSeriesDetails() {
 
             <div className="w-full flex flex-col justify-center items-center bg-white p-6 rounded-lg shadow-sm space-y-6">
             <h2 className="text-xl font-semibold text-[#263238] text-left w-full mb-4">Reviews</h2>
-              <ReviewCarousel {...requrestedTestSeries} />
+              {
+                requrestedTestSeries.reviews.length > 0 ? (
+                  <ReviewCarousel {...requrestedTestSeries} />
+                ) : (
+                  <div className="w-full flex-shrink-0 px-1">
+                    <p className="text-gray-400">no reviews yet</p>
+                  </div>
+                )
+              }
             </div>
           </div>
 
