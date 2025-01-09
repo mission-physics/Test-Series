@@ -4,6 +4,7 @@ import { TestSeriesArr } from "@/app/lib/testSeries";
 import { ReviewType, TestSeriesType } from "@/app/lib/types";
 import { Calendar, ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 
@@ -56,14 +57,24 @@ export function TestSeriesDescription(testSeries: TestSeriesType) {
   
         <section>
           <h2 className="text-xl font-semibold text-[#263238] mb-4">Syllabus Coverage</h2>
-          <ul className="space-y-3 text-gray-600">
-            <li>• Classical Mechanics</li>
-            <li>• Electromagnetic Theory</li>
-            <li>• Quantum Mechanics</li>
-            <li>• Thermodynamics & Statistical Physics</li>
-            <li>• Modern Physics</li>
-            <li>• Electronics & Experimental Methods</li>
-          </ul>
+          <Link href={testSeries.syllabus} target="_blank" className="underline cursor-pointer text-blue-500">View Syllabus</Link>
+        </section>
+
+        <section>
+          <h2 className="text-xl font-semibold text-[#263238] mb-4">Paper Setters</h2>
+          {
+            typeof testSeries.paperSetters === "string" ? (
+              <p className="text-gray-600">{testSeries.paperSetters}</p>
+            ) : (
+              <div>
+                {
+                  testSeries.paperSetters.map((papersetter) => (
+                    <p key={papersetter.id}>{papersetter.name}</p>
+                  ))
+                }
+              </div>
+            )
+          }
         </section>
       </div>
     );
@@ -187,8 +198,10 @@ export function ReviewCarousel(testSeries: TestSeriesType) {
 };
 
 export function ReviewCard( review: ReviewType ) {
+  const [expandedReview, setExpandedReview] = useState<number | undefined>();
+
   return (
-    <div className="bg-white rounded-lg shadow-lg p-6">
+    <div className={`bg-white rounded-lg shadow-lg my-4 p-6 ${expandedReview !== review.id ? "h-[55svh]" : ""}`}>
       <div className="flex items-center gap-2 text-gray-600 mb-4">
         <Calendar size={16} />
         <span className="text-sm">{review.date}</span>
@@ -197,7 +210,17 @@ export function ReviewCard( review: ReviewType ) {
       <h3 className="font-bold text-gray-800 mb-2">{review.name}</h3>
       <p className="text-sm text-gray-600 mb-4">{review.college}</p>
       
-      <p className="text-gray-700 text-sm whitespace-pre-line">{review.review}</p>
+      {
+        review.review.length > 400 && expandedReview !== review.id ? (
+          <p className="text-gray-700 text-sm whitespace-pre-line">
+            {review.review.slice(0, 400)} <span className="underline cursor-pointer" onClick={() => setExpandedReview(review.id)}>Read more</span>
+          </p>
+        ) : (
+          <p className="text-gray-700 text-sm whitespace-pre-line">
+            {review.review}
+          </p>
+        )
+      }
     </div>
   );
 };

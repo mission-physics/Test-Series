@@ -1,5 +1,6 @@
-import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 import Image from "next/image";
+import { FaWhatsapp, FaYoutube } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
 
 
 type FooterSection = {
@@ -9,10 +10,9 @@ type FooterSection = {
 
 export function FooterSocial() {
   const socialLinks = [
-    { icon: Facebook, href: "#" },
-    { icon: Twitter, href: "#" },
-    { icon: Instagram, href: "#" },
-    { icon: Linkedin, href: "#" },
+    { icon: FaYoutube, href: "https://youtube.com/@MissionPhysicsOfficial" },
+    { icon: HiOutlineMail, href: "https://mailto:missionphysics.official@gmail.com" },
+    { icon: FaWhatsapp, href: "https://whatsapp.com/channel/0029Va90MBI6mYPEIAvFCB2W" },
   ];
 
   return (
@@ -60,37 +60,35 @@ const footerSections = [
   {
     title: "Company",
     links: [
-      { label: "About Us", href: "#" },
-      { label: "Our Team", href: "#" },
-      { label: "Careers", href: "#" },
-      { label: "Contact", href: "#" },
+      { label: "About Us", href: "#about" },
+      // { label: "Our Team", href: "#" },
+      // { label: "Careers", href: "#" },
+      { label: "Contact", href: "#contact" },
     ],
   },
   {
     title: "Test Series",
     links: [
-      { label: "IIT JAM", href: "#" },
-      { label: "JEST", href: "#" },
-      { label: "GATE", href: "#" },
-      { label: "NET", href: "#" },
+      { label: "IIT JAM", href: "/test-series/2" },
+      { label: "JEST", href: "/test-series/1" },
     ],
   },
   {
     title: "Resources",
     links: [
-      { label: "Study Material", href: "#" },
-      { label: "Sample Papers", href: "#" },
-      { label: "Previous Papers", href: "#" },
-      { label: "Blog", href: "#" },
+      { label: "Test Series", href: "#" },
+      // { label: "Sample Papers", href: "#" },
+      // { label: "Previous Papers", href: "#" },
+      // { label: "Blog", href: "#" },
     ],
   },
   {
     title: "Support",
     links: [
-      { label: "Help Center", href: "#" },
-      { label: "Terms of Service", href: "#" },
-      { label: "Privacy Policy", href: "#" },
-      { label: "FAQ", href: "#" },
+      { label: "Help Center", href: "#contact" },
+      // { label: "Terms of Service", href: "#" },
+      // { label: "Privacy Policy", href: "#" },
+      // { label: "FAQ", href: "#" },
     ],
   },
 ];

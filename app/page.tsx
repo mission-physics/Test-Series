@@ -15,8 +15,11 @@ export function Hero() {
               Master Physics for
               <span className="text-[#dea0ee]"> Competitive Exams</span>
             </h1>
-            <p className="text-lg text-gray-600 mb-8">
+            <p className="text-lg text-gray-600 mb-3">
               Comprehensive test series and expert guidance for IIT JAM, JEST, and other competitive physics examinations.
+            </p>
+            <p className="text-gray-400 font-semibold mb-8">
+              All the test series are live till your exam date
             </p>
             <Link href={"#test-series"} className="bg-[#dea0ee] text-gray-50 px-8 py-3 rounded-full font-semibold hover:bg-[#dea0ee] transition-colors">
               Explore Test Series
@@ -33,7 +36,7 @@ export function Hero() {
 
 export function Features() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white" id="about">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-center text-[#263238] mb-12">Why Choose Mission Physics?</h2>
         <div className="grid md:grid-cols-3 gap-8">
@@ -91,8 +94,11 @@ export function TestSeries() {
                   Early Bird Offer
                 </span>
               </div>
+              <span className="text-xs text-gray-500 font-semibold">
+                ✦ only {item.seatLeft} seats left. Hurry up!!!
+              </span>
               <Link href={`/test-series/${item.id}`} className="flex items-center justify-center gap-2 hover:gap-3 text-white rounded-md font-semibold bg-[#dea0ee] hover:bg-[#eaa5fb] px-2 py-2 hover:text-gray-100 mt-2 transition-colors">
-                Enroll Now <ArrowRight className="w-4 h-4" />
+                View more <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
           ))}
@@ -105,15 +111,15 @@ export function TestSeries() {
 
 export function Contact() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white" id="contact">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl font-bold text-[#263238] mb-6">Ready to Start Your Journey?</h2>
         <p className="text-lg text-gray-600 mb-8">
           Join Mission Physics today and take the first step towards your success.
         </p>
-        <button className="bg-[#dea0ee] text-gray-50 px-8 py-3 rounded-full font-semibold hover:bg-[#eaa5fb] transition-colors">
+        <Link href="https://mailto:missionphysics.official@gmail.com" className="bg-[#dea0ee] text-gray-50 px-8 py-3 rounded-full font-semibold hover:bg-[#eaa5fb] transition-colors">
           Contact Us
-        </button>
+        </Link>
       </div>
     </section>
   );
