@@ -178,9 +178,9 @@ export function ReviewCarousel(testSeries: TestSeriesType) {
 
   return (
     <div className="relative max-w-md mx-auto">
-      <div className="overflow-hidden px-8">
+      <div className="overflow-hidden md:px-8 px-4">
         <div 
-          className="flex transition-transform duration-300 ease-in-out"
+          className="flex transition-transform duration-300 ease-in-out md:w-full w-[20rem]"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
           {testSeries.reviews.map((review) => (
@@ -240,14 +240,27 @@ export default function TestSeriesDetails() {
     <div className="min-h-screen bg-gray-50  pt-16">
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {/* Mobile Header */}
+        <div className="md:hidden">
+          <TestSeriesHeader {...requrestedTestSeries} />
+        </div>
+
+
+        {/* Mobile Purchase Card */}
+        <div className="lg:col-span-1 md:hidden">
+          <TestSeriesPurchaseCard {...requrestedTestSeries} />
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Left Content */}
           <div className="lg:col-span-2 space-y-8">
-            <TestSeriesHeader {...requrestedTestSeries} />
+            <div className="hidden md:block">
+              <TestSeriesHeader {...requrestedTestSeries} />
+            </div>
             <TestSeriesDescription {...requrestedTestSeries} />
             <ScheduleTable {...requrestedTestSeries} />
 
-            <div className="w-full flex flex-col justify-center items-center bg-white p-6 rounded-lg shadow-sm space-y-6">
+            <div className="w-full flex flex-col justify-center items-center bg-white p-2 md:p-6 rounded-lg shadow-sm space-y-6">
             <h2 className="text-xl font-semibold text-[#263238] text-left w-full mb-4">Reviews</h2>
               {
                 requrestedTestSeries.reviews.length > 0 ? (
@@ -262,7 +275,7 @@ export default function TestSeriesDetails() {
           </div>
 
           {/* Right Sidebar */}
-          <div className="lg:col-span-1">
+          <div className="lg:col-span-1 md:block hidden">
             <TestSeriesPurchaseCard {...requrestedTestSeries} />
           </div>
         </div>

@@ -21,11 +21,10 @@ export const TestSeriesArr: TestSeriesType[] = [
       "Experience 8 comprehensive full-length tests designed to cover all topics and elevate your preparation. Tailored to perfection, this test series simulates real exams, boosts your confidence, and helps you achieve your dream rank!",
     duration: "Live Now",
     paperSetters: [
-      "IIT-Bombay",
-      "IIT-Madras",
-      "IIT-KGP",
-      "IIT-Dhanbad",
-      "IIT-Jodhpur",
+      "IISC-Bangalore",
+      "TIFR-Mumbai",
+      "HRI-Allahabad",
+      "IMSC-Chennai"
     ],
     reviews: [
       {
@@ -192,7 +191,13 @@ Thank you, Mission Physics!
     description:
       "Ace IIT JAM 2025 (Physics) with 15 expertly crafted tests, in which 7 topic-wise tests and 8 full-length tests, covering the entire syllabus. Designed to mirror the real exam, this series boosts your confidence, sharpens your skills, and propels you toward your dream score!",
     duration: "Live Now",
-    paperSetters: "The paper setters for the IIT JAM test series are distinguished subject experts and experienced educators from various IITs across India. With deep domain knowledge and years of teaching expertise, they ensure the test series aligns closely with the JAM syllabus, offering students a comprehensive and high-quality preparation experience.",
+    paperSetters: [
+      "IIT-Bombay",
+      "IIT-Madras",
+      "IIT-KGP",
+      "IIT-Dhanbad",
+      "IIT-Jodhpur",
+    ],
     reviews: [
       {
         id: 1,

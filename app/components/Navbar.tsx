@@ -23,9 +23,9 @@ export function Navbar() {
           <div className="hidden md:flex items-center space-x-8">
             <Link href="/" className="text-[#263238] hover:text-[#eaa5fb] transition-colors">Home</Link>
             <Link href="/about" className="text-[#263238] hover:text-[#eaa5fb] transition-colors">About</Link>
-            <Link href="#test-series" className="text-[#263238] hover:text-[#eaa5fb] transition-colors">Test Series</Link>
-            <Link href="#contact" className="text-[#263238] hover:text-[#eaa5fb] transition-colors">Contact</Link>
-            <button className="bg-[#dea0ee] text-gray-50 px-4 py-2 rounded-full font-semibold hover:bg-[#eaa5fb] transition-colors" onClick={() => router.push("#test-series")}>
+            <Link href="/#test-series" className="text-[#263238] hover:text-[#eaa5fb] transition-colors">Test Series</Link>
+            <Link href="/#contact" className="text-[#263238] hover:text-[#eaa5fb] transition-colors">Contact</Link>
+            <button className="bg-[#dea0ee] text-gray-50 px-4 py-2 rounded-full font-semibold hover:bg-[#eaa5fb] transition-colors" onClick={() => router.push("/#test-series")}>
               Get Started
             </button>
           </div>
@@ -42,11 +42,11 @@ export function Navbar() {
         {isOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <a href="#" className="block px-3 py-2 text-[#263238] hover:text-[#92E3A9] transition-colors">Home</a>
-              <a href="#" className="block px-3 py-2 text-[#263238] hover:text-[#92E3A9] transition-colors">About</a>
-              <a href="#" className="block px-3 py-2 text-[#263238] hover:text-[#92E3A9] transition-colors">Test Series</a>
-              <a href="#" className="block px-3 py-2 text-[#263238] hover:text-[#92E3A9] transition-colors">Contact</a>
-              <button className="w-full mt-2 bg-[#92E3A9] text-[#263238] px-4 py-2 rounded-full font-semibold hover:bg-[#82d399] transition-colors">
+              <Link href="/" className="block px-3 py-2 text-[#263238] hover:text-[#eaa5fb] transition-colors">Home</Link>
+              <Link href="/about" className="block px-3 py-2 text-[#263238] hover:text-[#eaa5fb] transition-colors">About</Link>
+              <Link href="/#test-series" className="block px-3 py-2 text-[#263238] hover:text-[#eaa5fb] transition-colors">Test Series</Link>
+              <Link href="/#contact" className="block px-3 py-2 text-[#263238] hover:text-[#eaa5fb] transition-colors">Contact</Link>
+              <button className="w-full mt-2 bg-[#dea0ee] text-[#263238] px-4 py-2 rounded-full font-semibold hover:bg-[#eaa5fb] transition-colors" onClick={() => router.push("/#test-series")}>
                 Get Started
               </button>
             </div>
