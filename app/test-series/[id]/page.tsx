@@ -66,12 +66,16 @@ export function TestSeriesDescription(testSeries: TestSeriesType) {
             typeof testSeries.paperSetters === "string" ? (
               <p className="text-gray-600">{testSeries.paperSetters}</p>
             ) : (
-              <div>
-                {
-                  testSeries.paperSetters.map((papersetter) => (
-                    <p key={papersetter.id}>{papersetter.name}</p>
-                  ))
-                }
+              <div className="flex flex-col justify-center items-start">
+                <p className="text-gray-600 font-semibold mb-2">{testSeries.title} Paper Setters team is from :-</p>
+                <ul className="flex flex-col mb-2 ml-6">
+                  {
+                    testSeries.paperSetters.map((papersetter, index) => (
+                      <li key={index}  className="list-disc text-gray-600">{papersetter}</li>
+                    ))
+                  }
+                </ul>
+                <p className="text-gray-500">And from many more iits. and from {"India's"} premium research institutions...</p>
               </div>
             )
           }
@@ -126,8 +130,8 @@ export function ScheduleTable(testSeries: TestSeriesType) {
         <thead>
           <tr className="bg-gray-100">
             <th className="p-3 text-left text-[#dea0ee] font-medium border-b border-gray-300">Test Name</th>
-            <th className="p-3 text-left text-[#dea0ee] font-medium border-b border-gray-300">Started On</th>
-            <th className="p-3 text-left text-[#dea0ee] font-medium border-b border-gray-300">Ended On</th>
+            <th className="p-3 text-left text-[#dea0ee] font-medium border-b border-gray-300">Test start date</th>
+            <th className="p-3 text-left text-[#dea0ee] font-medium border-b border-gray-300">Test end date</th>
           </tr>
         </thead>
         <tbody>

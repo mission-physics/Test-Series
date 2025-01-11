@@ -60,7 +60,7 @@ const footerSections = [
   {
     title: "Company",
     links: [
-      { label: "About Us", href: "#about" },
+      { label: "About Us", href: "/about" },
       // { label: "Our Team", href: "#" },
       // { label: "Careers", href: "#" },
       { label: "Contact", href: "#contact" },
@@ -71,6 +71,8 @@ const footerSections = [
     links: [
       { label: "IIT JAM", href: "/test-series/2" },
       { label: "JEST", href: "/test-series/1" },
+      { label: "TIFR-GS_both I-PHD & PHD", href: "#" },
+      { label: "CUET-PG_PH", href: "#" },
     ],
   },
   {

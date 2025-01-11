@@ -10,7 +10,7 @@ export type TestSeriesType = {
     totalTests: number,
     reviews: ReviewType[],
     description: string,
-    paperSetters: PaperSetterType[] | string,
+    paperSetters: string[] | string,
     features: string[],
     syllabus: string,
     schedule: ScheduleType[],
@@ -24,14 +24,6 @@ export type ReviewType = {
     course: string,
     review: string,
     date: string,
-}
-
-export type PaperSetterType = {
-    id: number,
-    name: string,
-    designation: string,
-    institutiom: string,
-    description: string,
 }
 
 export type ScheduleType = {

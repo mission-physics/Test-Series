@@ -22,7 +22,7 @@ export function Navbar() {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             <Link href="/" className="text-[#263238] hover:text-[#eaa5fb] transition-colors">Home</Link>
-            <Link href="#about" className="text-[#263238] hover:text-[#eaa5fb] transition-colors">About</Link>
+            <Link href="/about" className="text-[#263238] hover:text-[#eaa5fb] transition-colors">About</Link>
             <Link href="#test-series" className="text-[#263238] hover:text-[#eaa5fb] transition-colors">Test Series</Link>
             <Link href="#contact" className="text-[#263238] hover:text-[#eaa5fb] transition-colors">Contact</Link>
             <button className="bg-[#dea0ee] text-gray-50 px-4 py-2 rounded-full font-semibold hover:bg-[#eaa5fb] transition-colors" onClick={() => router.push("#test-series")}>

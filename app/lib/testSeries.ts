@@ -13,11 +13,20 @@ export const TestSeriesArr: TestSeriesType[] = [
       "Detailed solution in PDF format",
       "Direct live interaction with paper setters",
       "Access of MP_JEST_2025_Official Class",
+      "All test will live till your exam day, so you may attend it anytime for your convenience",
+      "Strictly following latest jest 2025_Official exam pattern",
+      "Get direct placement oppertunity in Mission Physics by scoring good marks"
     ],
     description:
       "Experience 8 comprehensive full-length tests designed to cover all topics and elevate your preparation. Tailored to perfection, this test series simulates real exams, boosts your confidence, and helps you achieve your dream rank!",
     duration: "Live Now",
-    paperSetters: [],
+    paperSetters: [
+      "IIT-Bombay",
+      "IIT-Madras",
+      "IIT-KGP",
+      "IIT-Dhanbad",
+      "IIT-Jodhpur",
+    ],
     reviews: [
       {
         id: 1,
@@ -165,7 +174,7 @@ Thank you, Mission Physics!
   },
   {
     id: 2,
-    coverImage: "/images/card-cover.jpg",
+    coverImage: "/images/jam-cover.png",
     title: "IIT JAM 2025 (Physics)",
     date: "Started on 20th November, 2025",
     price: 750,
@@ -177,6 +186,8 @@ Thank you, Mission Physics!
       "Paper setters are from all over the IITs.",
       "Aspirants may interact with them in officail WhatsApp group",
       "Access of MP_IIT-JAM_2025_Official Class in Google Classroom",
+      "All test will live till your exam day, so you may attend it anytime for your convenience",
+      "Get direct placement oppertunity in Mission Physics by scoring good marks"
     ],
     description:
       "Ace IIT JAM 2025 (Physics) with 15 expertly crafted tests, in which 7 topic-wise tests and 8 full-length tests, covering the entire syllabus. Designed to mirror the real exam, this series boosts your confidence, sharpens your skills, and propels you toward your dream score!",
