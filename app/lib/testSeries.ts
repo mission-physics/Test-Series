@@ -4,7 +4,7 @@ export const TestSeriesArr: TestSeriesType[] = [
   {
     id: 1,
     coverImage: "/images/jest_cover.png",
-    title: "JEST 2025 Premium Test Series",
+    title: "JEST 2025 (Physics) Premium Test Series",
     date: "Started on 1st Jan, 2025",
     price: 499,
     discount: 20,
@@ -281,6 +281,20 @@ I extend my heartfelt gratitude to Mission Physics for their invaluable support 
 Thank you, Mission Physics!
         `,
       },
+      {
+        id: 6,
+        date: "16/08/2024",
+        college: "IIT JODHPUR",
+        course: "Msc",
+        name: "Puskar Paul",
+        review: `
+          I started JAM  exam preparation by self studies then I took test series in MISSION PHYSICS for JAM .  The test series help me a lot . I am benefited  a lot by the test series. 
+     - Thank you MISSION PHYSICS.
+I got AIR - 493 in IIT -  JAM 
+
+and RIGHT NOW I got  admission  in IIT JODHPUR
+        `,
+      }
     ],
     syllabus: "https://drive.google.com/file/d/1CwvHITRezcObQwG1DEQXcx9v2S1G5dsX/view?usp=drivesdk",
     totalTests: 15,
