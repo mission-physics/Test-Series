@@ -87,7 +87,7 @@ export function TestSeriesDescription(testSeries: TestSeriesType) {
 
 export function TestSeriesPurchaseCard(testSeries: TestSeriesType ) {
     const handleCourseEnroll = () => {
-      window.open(`https://wa.me/${8436582775}?text=${encodeURI(`Hi, I want to enroll for ${testSeries.title}`)}.`, '_blank');
+      window.open(`https://wa.me/${8436582775}?text=${encodeURI(testSeries.message)}.`, '_blank');
     }
 
     return (

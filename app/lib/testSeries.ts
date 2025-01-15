@@ -169,7 +169,8 @@ Thank you, Mission Physics!
         startedOn: "23/02/2025",
       },
     ],
-    seatLeft: 25
+    seatLeft: 25,
+    message: "Hi, I want to enroll for JEST 2025 Premium Test Series."
   },
   {
     id: 2,
@@ -376,6 +377,7 @@ and RIGHT NOW I got  admission  in IIT JODHPUR
         endedOn: "02/02/2025",
       },
     ],
-    seatLeft: 17
+    seatLeft: 17,
+    message: "Hi, I want to enroll for IIT JAM 2025 (Physics) Premium Test Series."
   },
 ];

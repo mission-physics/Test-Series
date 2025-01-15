@@ -14,7 +14,8 @@ export type TestSeriesType = {
     features: string[],
     syllabus: string,
     schedule: ScheduleType[],
-    seatLeft: number
+    seatLeft: number,
+    message: string
 }
 
 export type ReviewType = {
