@@ -80,7 +80,7 @@ export function TestSeries() {
         <h2 className="text-3xl font-bold text-center text-[#263238] mb-12">Available Test Series</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {TestSeriesArr.map((item) => (
-            <div key={item.id} className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+            <div key={item.id} className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col justify-between">
               <Image src={item.coverImage} alt={item.title} width={500} height={500} className="rounded-md mb-4" />
               <h3 className="text-xl font-semibold text-[#263238] mb-2">{item.title}</h3>
               <p className="text-gray-600 mb-4">{item.date}</p>
