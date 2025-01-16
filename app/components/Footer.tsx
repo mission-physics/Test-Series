@@ -11,7 +11,7 @@ type FooterSection = {
 export function FooterSocial() {
   const socialLinks = [
     { icon: FaYoutube, href: "https://youtube.com/@MissionPhysicsOfficial" },
-    { icon: HiOutlineMail, href: "https://mailto:missionphysics.official@gmail.com" },
+    { icon: HiOutlineMail, href: `https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzDfhRLVfGkHjktWJcHmrNhxJJKSzgZWghQkjPZXjrfxbwLzKNcsHpLCpjPHHmMdhXRlChM` },
     { icon: FaWhatsapp, href: "https://whatsapp.com/channel/0029Va90MBI6mYPEIAvFCB2W" },
   ];
 
