@@ -117,7 +117,7 @@ export function Contact() {
         <p className="text-lg text-gray-600 mb-8">
           Join Mission Physics today and take the first step towards your success.
         </p>
-        <Link href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzDfhRLVfGkHjktWJcHmrNhxJJKSzgZWghQkjPZXjrfxbwLzKNcsHpLCpjPHHmMdhXRlChM" className="bg-[#dea0ee] text-gray-50 px-8 py-3 rounded-full font-semibold hover:bg-[#eaa5fb] transition-colors">
+        <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=missionphysics.official@gmail.com">
           Contact Us
         </Link>
       </div>
