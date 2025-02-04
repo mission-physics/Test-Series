@@ -131,45 +131,45 @@ Thank you, Mission Physics!
       {
         testName: "JEST FLT01",
         startedOn: "01/01/2025",
-        endedOn: "23/02/2025",
+        endedOn: "06/04/2025",
       },
       {
         testName: "JEST FLT02",
         startedOn: "04/01/2025",
-        endedOn: "23/02/2025",
+        endedOn: "06/04/2025",
       },
       {
         testName: "JEST FLT03",
         startedOn: "11/01/2025",
-        endedOn: "23/02/2025",
+        endedOn: "06/04/2025 ",
       },
       {
         testName: "JEST FLT04",
         startedOn: "18/01/2025",
-        endedOn: "23/02/2025",
+        endedOn: "06/04/2025",
       },
       {
         testName: "JEST FLT05",
         startedOn: "25/01/2025",
-        endedOn: "23/02/2025",
+        endedOn: "06/04/2025",
       },
       {
         testName: "JEST FLT06",
         startedOn: "01/02/2025",
-        endedOn: "23/02/2025",
+        endedOn: "06/04/2025",
       },
       {
         testName: "JEST FLT07",
         startedOn: "08/02/2025",
-        endedOn: "23/02/2025",
+        endedOn: "06/04/2025",
       },
       {
         testName: "JEST FLT08",
         startedOn: "15/02/2025",
-        endedOn: "23/02/2025",
+        endedOn: "06/04/2025",
       },
     ],
-    seatLeft: 25,
+    seatLeft: 15,
     message: "Hi, I want to enroll for JEST 2025 Premium Test Series."
   },
   {
