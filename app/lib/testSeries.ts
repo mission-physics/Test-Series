@@ -384,7 +384,7 @@ and RIGHT NOW I got  admission  in IIT JODHPUR
     id: 3,
     coverImage: "/images/cuet-cover.png",
     title: "MP CUET-PG_PH_2025 Premium Test Series",
-    date: "Started on 20th November, 2025",
+    date: "Started on 2nd February, 2025",
     price: 375,
     discount: 20,
     discountedPrice: 299,
@@ -392,7 +392,7 @@ and RIGHT NOW I got  admission  in IIT JODHPUR
       "Detailed solution in PDF format",
       "Direct interaction with paper setters",
       "On latest 2025 NTA pattern",
-      "Access of  MP_CUET-PG_PH_2025 official classes",
+      "Access of  MP_CUET-PG_PH_2025 official class",
       "Get direct placement oppertunity in Mission Physics by scoring good marks"
     ],
     description:
@@ -401,7 +401,7 @@ and RIGHT NOW I got  admission  in IIT JODHPUR
     paperSetters: [
       "Subhadip Jana, from IIT-Dhanbad",
       "Puskar Paul, from IIT-Jodhpu",
-      "* Arit Dutta, from IIT-Mandi",
+      "Arit Dutta, from IIT-Mandi",
     ],
     reviews: [
       {
@@ -474,7 +474,7 @@ Thank you, Mission Physics!
         endedOn: "31/03/2025",
       },
     ],
-    seatLeft: 50,
+    seatLeft: 31,
     message: "Hi, I want to enroll for MP CUET-PG_PH_2025 Premium Test Series."
   }
 ];
