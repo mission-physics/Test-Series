@@ -400,7 +400,7 @@ and RIGHT NOW I got  admission  in IIT JODHPUR
     duration: "Live Now",
     paperSetters: [
       "Subhadip Jana, from IIT-Dhanbad",
-      "Puskar Paul, from IIT-Jodhpu",
+      "Puskar Paul, from IIT-Jodhpur",
       "Arit Dutta, from IIT-Mandi",
     ],
     reviews: [
