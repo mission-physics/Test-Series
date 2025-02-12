@@ -443,6 +443,19 @@ I extend my heartfelt gratitude to Mission Physics for their invaluable support 
 
 Thank you, Mission Physics!
         `,
+      },
+      {
+        id: 3,
+        date: "08/11/2024",
+        college: "IIT Guwahati",
+        course: "Msc",
+        name: "Aditya Jaiswal",
+        review: `
+          From Jharkhand . Currently, I'm pursuing my master's in physics at IIT Guwahati.
+Last year, I appeared for two exams: the CUET PG Physics exam and the IIT JAM Physics exam. In CUET PG, I scored 171 out of 300, and in JAM, I secured an AIR of 189.  
+
+I purchased the Mission Physics test series for both the exams, and it was incredibly helpful in improving my preparation. I’m grateful to whoever recommended this test series to me—it made a significant difference in my performance.
+        `,
       }
     ],
     syllabus: "https://drive.google.com/file/d/1-_Px-1YUgGyfdojgbzYfLN43OrpsXSt4/view?usp=drivesdk",
