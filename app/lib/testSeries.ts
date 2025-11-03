@@ -490,4 +490,114 @@ I purchased the Mission Physics test series for both the exams, and it was incre
     seatLeft: 31,
     message: "Hi, I want to enroll for MP CUET-PG_PH_2025 Premium Test Series."
   }
+  {
+    id: 4,
+    coverImage: "/images/cuet-cover.png",
+    title: "MP TIFR-GS : I-PHD_PH_2026 Premium Test Series",
+    date: "will be commencing from 8th November, 2025",
+    price: 399,
+    discount: 25,
+    discountedPrice: 299,
+    features: [
+      "Detailed solution in PDF format",
+      "Direct interaction with paper setters",
+      "On latest TIFR-GS : 2026 Qn. pattern",
+      "Access of  MP_TIFR-GS_I-PHD_PH_2026 official class",
+      "Get direct placement oppertunity in Mission Physics as an SME through your Test Series performance"
+    ],
+    description:
+      "Ace CUET PH 2025 (Physics) with 5 expertly crafted tests, on latest 75 questions pattern, covering the entire syllabus. Designed to mirror the real exam, this series boosts your confidence, sharpens your skills, and propels you toward your dream score!",
+    duration: "Live Now",
+    paperSetters: [
+      "Subhadip Jana, from IIT-Dhanbad",
+      "Puskar Paul, from IIT-Jodhpur",
+      "Arit Dutta, from IIT-Mandi",
+    ],
+    reviews: [
+      {
+        id: 1,
+        date: "15/11/2024",
+        college: "NIT Jaipur",
+        course: "Msc",
+        name: "Mohit Kumar",
+        review: `
+          Currently I'm doing my master in physics from NIT jaipur. Last year I appeared in cuet pg physics exam and I score 204 marks out of 300. I purchased mission physics test series for cuet before 1 week 
+ And get a good score in cuet. This was very helpful for me and lot of thanks for whoever suggest me this test series.
+
+Thank you, Mission Physics!
+        `,
+      },
+      {
+        id: 2,
+        date: "27/10/2024",
+        college: "IIT Dhanbad",
+        course: "Msc",
+        name: "Subhadip Jana",
+        review: `
+          I am Subhadip Jana, a B.Sc. graduate from Midnapore College (Autonomous).
+
+I began preparing for competitive exams like IIT JAM and JEST through self-study before enrolling in the test series provided by Mission Physics for JAM, JEST, and CUET. The structured test series played a pivotal role in enhancing my preparation, offering valuable practice and strategic insights that significantly boosted my performance.
+
+As a result of this rigorous preparation and guidance, I achieved:
+
+AIR 744 in IIT JAM.
+
+Qualified in JEST.
+
+A score of 182 in CUET.
+
+
+I am delighted to share that I secured admission to IIT Dhanbad.
+
+I extend my heartfelt gratitude to Mission Physics for their invaluable support in my academic journey. The test series provided a transformative learning experience that greatly contributed to my success.
+
+Thank you, Mission Physics!
+        `,
+      },
+      {
+        id: 3,
+        date: "08/11/2024",
+        college: "IIT Guwahati",
+        course: "Msc",
+        name: "Aditya Jaiswal",
+        review: `
+          From Jharkhand . Currently, I'm pursuing my master's in physics at IIT Guwahati.
+Last year, I appeared for two exams: the CUET PG Physics exam and the IIT JAM Physics exam. In CUET PG, I scored 171 out of 300, and in JAM, I secured an AIR of 189.  
+
+I purchased the Mission Physics test series for both the exams, and it was incredibly helpful in improving my preparation. I’m grateful to whoever recommended this test series to me—it made a significant difference in my performance.
+        `,
+      }
+    ],
+    syllabus: "https://drive.google.com/file/d/1-_Px-1YUgGyfdojgbzYfLN43OrpsXSt4/view?usp=drivesdk",
+    totalTests: 5,
+    schedule: [
+      {
+        testName: "Test 01",
+        startedOn: "17/02/2025",
+        endedOn: "31/03/2025",
+      },
+      {
+        testName: "Test 02",
+        startedOn: "24/02/2025",
+        endedOn: "31/03/2025",
+      },
+      {
+        testName: "Test 03",
+        startedOn: "03/03/2025",
+        endedOn: "31/03/2025",
+      },
+      {
+        testName: "Test 04",
+        startedOn: "10/03/2025",
+        endedOn: "31/03/2025",
+      },
+      {
+        testName: "Test 05",
+        startedOn: "14/03/2025",
+        endedOn: "31/03/2025",
+      },
+    ],
+    seatLeft: 31,
+    message: "Hi, I want to enroll for MP CUET-PG_PH_2025 Premium Test Series."
+  }
 ];
