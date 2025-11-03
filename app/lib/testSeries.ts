@@ -489,7 +489,7 @@ I purchased the Mission Physics test series for both the exams, and it was incre
     ],
     seatLeft: 31,
     message: "Hi, I want to enroll for MP CUET-PG_PH_2025 Premium Test Series."
-  }
+  },
   {
     id: 4,
     coverImage: "/images/cuet-cover.png",
